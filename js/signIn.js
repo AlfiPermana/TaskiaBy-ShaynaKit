@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const result = userManager.signInUser(usernameByInput);
 
     if (result.success) {
+      localStorage.setItem("usernameLoggedIn", usernameByInput);
       return (window.location.href = "./tasks.html");
     } else {
       alert("username tidak ditemukan");
