@@ -1,4 +1,4 @@
-// file ini dugunakan untuk mengurus bussines logic
+// file ini digunakan untuk mengurus bussines logic
 // file ini digunakan untuk mengelola data sepeti create, read, update, etc
 
 class User {

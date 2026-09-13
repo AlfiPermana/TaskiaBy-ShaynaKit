@@ -8,12 +8,12 @@ class Task {
   }
 
   saveTask(taskData) {
-    const newTask = {
+    const newTaskData = {
       id: Date.now(),
       isComplete: false,
       ...taskData,
     };
-    this.tasks.push(newTask);
+    this.tasks.push(newTaskData);
     localStorage.setItem("tasks", JSON.stringify(this.tasks));
     return { success: true };
   }
