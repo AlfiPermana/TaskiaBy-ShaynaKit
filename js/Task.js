@@ -10,7 +10,7 @@ class Task {
   saveTask(taskData) {
     const newTaskData = {
       id: Date.now(),
-      isComplete: false,
+      isCompleted: false,
       ...taskData,
     };
     this.tasks.push(newTaskData);
